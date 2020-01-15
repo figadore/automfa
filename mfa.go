@@ -1,7 +1,6 @@
 package main
 
 import (
-	"crypto/sha256"
 	"flag"
 	"fmt"
 	"golang.org/x/crypto/ssh/terminal"
@@ -29,7 +28,6 @@ func main() {
 		return
 	}
 	cfg := otp.Config{
-		Hash:   sha256.New,
 		Digits: 6,
 	}
 	keyring_key := fmt.Sprintf("automfa_%s", opts.service)
