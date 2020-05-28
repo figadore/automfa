@@ -6,6 +6,6 @@
 
 # Usage
 
-Add a key to the keyring with `automfa -a [-c] <service>`
+Add a key to the keyring with `automfa -a [-c] <service>` where `service` is replaced with what you want to nickname this generator (e.g. `vip` or `okta`)
 
 Run `automfa <service>` to get a TOTP
