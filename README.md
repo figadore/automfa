@@ -6,6 +6,11 @@
 ## Mac additional security
 You may have to run the following to get around the error about the developer not being verified
 ```
+xattr -d com.apple.quarantine $(which automfa)
+```
+
+Alternatively
+```
 sudo spctl --master-disable
 automfa -h
 sudo spctl --master-enable
